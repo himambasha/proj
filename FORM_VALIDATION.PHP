@@ -21,26 +21,26 @@ return $data;
 }
 ?>
 <h2>Tutorials Point Absolute classes registration</h2>
-<form method = "post" action = "/php/php_form_introduction.htm">
+<form method = "post" action = "#" >
 <table>
 <tr>
-<td>Name:</td>
-<td><input type = "text" name = "name"></td>
+<td> Name:<?php echo "<span style='color:red'>*</span>" ?> </td>
+<td><input type = "text" name = "name" required></td>
 </tr>
 <tr>
-<td>E-mail:</td>
-<td><input type = "text" name = "email"></td>
+<td>E-mail:<?php echo "<span style='color:red'>*</span>" ?></td>
+<td><input type = "text" name = "email" required></td>
 </tr>
 <tr>
-<td>Specific Time:</td>
-<td><input type = "text" name = "website"></td>
+<td>Specific Time:<?php echo "<span style='color:red'>*</span>" ?></td>
+<td><input type = "text" name = "website" required></td>
 </tr>
 <tr>
-<td>Class details:</td>
+<td>Class details:<?php echo "<span style='color:red'>*</span>" ?></td>
 <td><textarea name = "comment" rows = "5" cols = "40"></textarea></td>
 </tr>
 <tr>
-<td>Gender:</td>
+<td>Gender:<?php echo "<span style='color:red'>*</span>" ?></td>
 <td>
 <input type = "radio" name = "gender" value = "female">Female
 <input type = "radio" name = "gender" value = "male">Male
